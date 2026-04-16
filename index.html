@@ -1,0 +1,148 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CRUXCIFY ROM</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #111, #1c1c1c);
+  color: white;
+}
+
+/* Section style */
+.section {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.glass {
+  max-width: 600px;
+  width: 100%;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(20px);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.1);
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+}
+
+.small {
+  font-size: 13px;
+  opacity: 0.7;
+  text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Section 1 -->
+<div class="section">
+  <div class="glass">
+    <h1>🔥 CRUXCIFY ROM</h1>
+    <p style="text-align:center;">
+      Want to turn your device into a Custom ROM Beast?
+    </p>
+  </div>
+</div>
+
+<!-- Section 2 -->
+<div class="section">
+  <div class="glass">
+    <h2>💯 Trust & Service</h2>
+    <p>
+      You can trust me 100%. I will personally help you fix lag, bugs, and performance issues.<br><br>
+
+      I can unlock bootloader, install custom ROMs, and optimize your device for better speed and battery life.<br><br>
+
+      My goal is simple — make your device faster, cleaner, and smoother.
+    </p>
+
+    <p class="small">
+      * I will try my best to keep your device safe, but unlocking bootloader or flashing may void warranty.
+    </p>
+  </div>
+</div>
+
+<!-- Section 3 -->
+<div class="section">
+  <div class="glass">
+    <h2>⚖️ Custom ROM Details</h2>
+
+    <p><b>Advantages:</b><br><br>
+    Custom ROMs improve performance by removing unnecessary apps and optimizing the system.
+    They provide better customization, cleaner UI, improved battery, and even newer Android versions.
+    Your device becomes faster and smoother overall.</p>
+
+    <p><b>Disadvantages:</b><br><br>
+    It may void warranty, and there is a small risk of bugs or issues depending on the ROM.
+    Incorrect installation can cause bootloops, and proper setup is required.</p>
+
+    <p style="text-align:center; margin-top:20px;">
+      👉 Follow me pls 😎 @mo3noob
+    </p>
+  </div>
+</div>
+
+<!-- Section 4 -->
+<div class="section">
+  <div class="glass">
+    <h2>📱 Enter Details</h2>
+
+    <input type="text" id="device" placeholder="Device Name">
+    <input type="text" id="model" placeholder="Model Number">
+
+    <div class="small">
+      📱 Open Settings → About Phone → Check Model Number
+    </div>
+
+    <button onclick="sendToInsta()">Submit</button>
+  </div>
+</div>
+
+<script>
+function sendToInsta() {
+  let device = document.getElementById("device").value;
+  let model = document.getElementById("model").value;
+
+  let msg = "Hey, I want CRUXCIFY ROM 🚀\nDevice: " + device + "\nModel: " + model;
+
+  navigator.clipboard.writeText(msg);
+
+  alert("Message copied! Paste it in Instagram chat.");
+
+  window.location.href = "https://instagram.com/mo3noob";
+}
+</script>
+
+</body>
+</html>
